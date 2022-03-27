@@ -1,0 +1,81 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+color: white;
+
+}
+/* 
+#contentbtn{
+
+
+    height: 3.5rem;
+    width: 15rem;
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(1,32,48,1) 0%, rgba(0,212,255,1) 100%);
+
+}
+#deletebtn{
+
+    height: 3.5rem;
+    width: 15rem;
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(1,32,48,1) 0%, rgba(0,212,255,1) 100%);
+
+}
+#updatebtn{
+
+
+    height: 3.5rem;
+    width: 15rem;
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(1,32,48,1) 0%, rgba(0,212,255,1) 100%);
+
+} */
+
+
+.btn{
+
+
+  margin-top: 3rem;
+    height: 5rem;
+    width: 15rem;
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(1,32,48,1) 0%, rgba(0,212,255,1) 100%);
+margin-left: 2rem;
+border-radius: 1rem;
+font-weight: 500;
+font-size: 1.5rem;
+}
+
+.btnmain{
+    
+    display: flex;
+justify-content: center;
+}
+.content{
+
+
+    background-color: #45C4B0;
+    height: 30rem;
+    width: 40rem;
+    border-radius: 4rem;
+
+
+}    
+
+.content1{
+
+
+    background-color: #13678A;
+    height: 30rem;
+    width: 40rem;
+    margin-left: 2rem;
+    border-radius: 4rem;
+
+
+}    
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+
+}
