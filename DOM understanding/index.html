@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+
+    </style>
+</head>
+<body>
+
+
+    <h1 id="mainheading"> Item lister </h1>
+    <h2> Add items </h2>
+    <input type="text" value="text" name="text">
+    <input type="submit" value="submit" name="submit">
+
+    <ul>
+
+        <li class="listing">item1</li>
+        <li class="listing">item2</li>
+        <li class="listing">item3</li>
+        <li class="listing">item4</li>
+
+    </ul>
+
+    
+</body>
+</html>
+<script>
+console.log(document.domain);
+console.log(document.URL);
+console.log(document.title);
+console.log(document.doctype);
+console.log(document.head);
+console.log(document.body);
+console.log(document.all);
+console.log(document.all[9]);
+
+// get element by ID
+let header = document.getElementById("mainheading");
+console.log(header);
+header.textContent = "hello";
+header.innerText = "everyone"; // will overwrite hello  
+console.log(header.textContent);
+
+// innertext pays attention to style
+header.innerHTML = '<h1> nikita jeena </h1>';
+header.style.borderBottom = 'solid 3px';
+//document.getelementsbyclassname
+
+
+var items = document.getElementsByClassName('listing');
+console.log(items);
+console.log(items[0]);
+
+items[0].textContent = "hello nikita jeena";
+items[0].style.fontWeight = 'bold';
+items[0].style.backgroundColor= 'cyan';
+for(let i = 0; i < items.length; i++){
+
+    items[i].style.color = 'red';
+}
+
+
+//document.getelementsbytagname
+//tagname - element
+
+//  QUERYSELECTOR //
+//queryselectorall
+var output = document.querySelector('#mainheading');
+output.style.color = 'pink';
+var output = document.querySelector('input');
+
+output.value = 'welcome all of you';
+
+var odd = document.querySelectorAll('li:nth-child(odd)');
+for(let i = 0; i<odd.length; i++){
+    odd[i].style.backgroundColor = 'grey';
+}
+</script>
+
+<!-- document object model
+
+tree of nodes or elements created by the browser
+javascript can be used to read , write, manipulate to the DOM
+object oriented representation
+
+
+-->
